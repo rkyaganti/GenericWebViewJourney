@@ -16,6 +16,7 @@
 		C0FDDCC127D3415C0046174B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FDDCBF27D3415C0046174B /* Main.storyboard */; };
 		C0FDDCC327D3415D0046174B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FDDCC227D3415D0046174B /* Assets.xcassets */; };
 		C0FDDCC627D3415D0046174B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0FDDCC427D3415D0046174B /* LaunchScreen.storyboard */; };
+		C0FDDCCD27D3462C0046174B /* GenericWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FDDCCC27D3462C0046174B /* GenericWebViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C0FDDCC227D3415D0046174B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0FDDCC527D3415D0046174B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0FDDCC727D3415D0046174B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FDDCCC27D3462C0046174B /* GenericWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		C0FDDC8B27D340900046174B /* GenericWebViewJourney */ = {
 			isa = PBXGroup;
 			children = (
+				C0FDDCCB27D345C10046174B /* Source */,
 				C0FDDC8C27D340900046174B /* GenericWebViewJourney.h */,
 			);
 			path = GenericWebViewJourney;
@@ -141,6 +144,14 @@
 				C0FDDCC727D3415D0046174B /* Info.plist */,
 			);
 			path = GenericWebViewJourneyExample;
+			sourceTree = "<group>";
+		};
+		C0FDDCCB27D345C10046174B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C0FDDCCC27D3462C0046174B /* GenericWebViewViewController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				TargetAttributes = {
 					C0FDDC8827D340900046174B = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					C0FDDC9027D340900046174B = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -283,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0FDDCCD27D3462C0046174B /* GenericWebViewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +472,8 @@
 		C0FDDC9C27D340900046174B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -478,6 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -486,6 +502,8 @@
 		C0FDDC9D27D340900046174B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -513,6 +531,7 @@
 		C0FDDC9F27D340900046174B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -528,6 +547,7 @@
 		C0FDDCA027D340900046174B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
